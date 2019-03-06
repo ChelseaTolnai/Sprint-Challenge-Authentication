@@ -30,19 +30,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 1. What is the purpose of using _sessions_?
 
-
+Sessions are used to allow a server to store information about a client and persist that data across requests. This allows a user to make multiple requests across an api or client app without having to re-enter information for each request.
 
 1. What does bcrypt do to help us store passwords in a secure manner.
 
-
+Since a password should never be store as plain text, a password should be stored using encryption or hashing. Hashing takes in parameters and an input and returns a new and complicated hashed output by utilizing algorithms which is vastly more difficult for hackers to decipher. Bcrypt is a module that hashes a password using an algorithm, implements salting, and performs the hashing multiple times. 
 
 1. What does bcrypt do to slow down attackers?
 
-
+Bcrypt performs accumulative hashing rounds on a password (or other input). This in turn slows down attackers because the attackers not only needs to obtain the hash, know the algorithm the hased used, but now also needs to know how many rounds were used to generate the hash itself.
 
 1. What are the three parts of the JSON Web Token?
 
-
+Header, Payload, Signature
 
 
 ## Project Set Up
